@@ -24,7 +24,7 @@ MongoDB 4.4+
 1. Clone and Install Dependencies
 
 # Clone the repository
-git clone <your-repo-url>
+git clone <repo-url>
 cd fusion-global-accounting/backend
 
 # Install dependencies
@@ -34,32 +34,31 @@ npm install
 
 Create a .env file in the backend root directory:
 
-env
-# Database
-MONGODB_URI=mongodb://localhost:27017/fusion-global-accounting
+# env
 
-# Server
+MONGODB_URI=mongodb://localhost:27017/fusion-global-accounting
 PORT=4000
 NODE_ENV=development
 
 3. Start MongoDB
-
-
-# Using Homebrew on macOS
+Using Homebrew on macOS
 brew services start mongodb-community
 
-# Or start manually
+Or start manually
 mongod --dbpath /usr/local/var/mongodb
 
 4. Run the Application
 
+Development mode (auto-restart on changes)
 
-# Development mode (auto-restart on changes)
 npm run start:dev
 
-# Production build
+Production build
+
 npm run build
+
 npm run start:prod
 
-# Or start directly
+Or start directly
+
 npm start
