@@ -23,7 +23,6 @@ MongoDB 4.4+
 
 1. Clone and Install Dependencies
 
-bash
 # Clone the repository
 git clone <your-repo-url>
 cd fusion-global-accounting/backend
@@ -45,7 +44,7 @@ NODE_ENV=development
 
 3. Start MongoDB
 
-bash
+
 # Using Homebrew on macOS
 brew services start mongodb-community
 
@@ -54,7 +53,7 @@ mongod --dbpath /usr/local/var/mongodb
 
 4. Run the Application
 
-bash
+
 # Development mode (auto-restart on changes)
 npm run start:dev
 
